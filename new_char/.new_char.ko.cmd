@@ -1,0 +1,1 @@
+cmd_/home/pierr/projet/nRF24-Pi/new_char/new_char.ko := aarch64-linux-gnu-ld -r  -EL  -maarch64elf -T ./scripts/module-common.lds -T ./arch/arm64/kernel/module.lds  --build-id  -o /home/pierr/projet/nRF24-Pi/new_char/new_char.ko /home/pierr/projet/nRF24-Pi/new_char/new_char.o /home/pierr/projet/nRF24-Pi/new_char/new_char.mod.o ;  true

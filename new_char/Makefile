@@ -1,7 +1,7 @@
 export ARCH=arm64
 export CROSS_COMPILE=aarch64-linux-gnu-
 
-obj­m += led.o
+obj­m += new_char.o
 
 # Kernel source directory
 KDIR := ~/projet/rt-kernel/linux
@@ -11,4 +11,4 @@ default:
 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
 
 clean:
-	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) clean 
+	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) clean

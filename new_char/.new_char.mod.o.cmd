@@ -1,8 +1,10 @@
-cmd_/home/pierr/projet/modules/led.o := aarch64-linux-gnu-gcc -Wp,-MD,/home/pierr/projet/modules/.led.o.d  -nostdinc -isystem /usr/lib/gcc-cross/aarch64-linux-gnu/9/include -I./arch/arm64/include -I./arch/arm64/include/generated  -I./include -I./arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -mgeneral-regs-only -DCONFIG_AS_LSE=1 -fno-asynchronous-unwind-tables -Wno-psabi -mabi=lp64 -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -Wno-address-of-packed-member -O2 --param=allow-store-data-races=0 -Wframe-larger-than=2048 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wno-pointer-sign -Wno-stringop-truncation -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned -Wall -g  -DMODULE  -DKBUILD_BASENAME='"led"' -DKBUILD_MODNAME='"led"' -c -o /home/pierr/projet/modules/.tmp_led.o /home/pierr/projet/modules/led.c
+cmd_/home/pierr/projet/nRF24-Pi/new_char/new_char.mod.o := aarch64-linux-gnu-gcc -Wp,-MD,/home/pierr/projet/nRF24-Pi/new_char/.new_char.mod.o.d  -nostdinc -isystem /usr/lib/gcc-cross/aarch64-linux-gnu/9/include -I./arch/arm64/include -I./arch/arm64/include/generated  -I./include -I./arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -mgeneral-regs-only -DCONFIG_AS_LSE=1 -fno-asynchronous-unwind-tables -Wno-psabi -mabi=lp64 -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -Wno-address-of-packed-member -O2 --param=allow-store-data-races=0 -Wframe-larger-than=2048 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wno-pointer-sign -Wno-stringop-truncation -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned -Wall -g  -DKBUILD_BASENAME='"new_char.mod"' -DKBUILD_MODNAME='"new_char"' -DMODULE  -c -o /home/pierr/projet/nRF24-Pi/new_char/new_char.mod.o /home/pierr/projet/nRF24-Pi/new_char/new_char.mod.c
 
-source_/home/pierr/projet/modules/led.o := /home/pierr/projet/modules/led.c
+source_/home/pierr/projet/nRF24-Pi/new_char/new_char.mod.o := /home/pierr/projet/nRF24-Pi/new_char/new_char.mod.c
 
-deps_/home/pierr/projet/modules/led.o := \
+deps_/home/pierr/projet/nRF24-Pi/new_char/new_char.mod.o := \
+    $(wildcard include/config/module/unload.h) \
+    $(wildcard include/config/retpoline.h) \
   include/linux/kconfig.h \
     $(wildcard include/config/cpu/big/endian.h) \
     $(wildcard include/config/booger.h) \
@@ -13,10 +15,60 @@ deps_/home/pierr/projet/modules/led.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc.h \
-    $(wildcard include/config/retpoline.h) \
     $(wildcard include/config/arch/use/builtin/bswap.h) \
-  include/linux/kernel.h \
+  include/linux/build-salt.h \
+    $(wildcard include/config/build/salt.h) \
+  include/linux/elfnote.h \
+  include/linux/elf.h \
+  arch/arm64/include/asm/elf.h \
+    $(wildcard include/config/compat.h) \
+  arch/arm64/include/asm/hwcap.h \
+  arch/arm64/include/uapi/asm/hwcap.h \
+  arch/arm64/include/asm/ptrace.h \
+  arch/arm64/include/uapi/asm/ptrace.h \
+  include/linux/types.h \
+    $(wildcard include/config/have/uid16.h) \
+    $(wildcard include/config/uid16.h) \
     $(wildcard include/config/lbdaf.h) \
+    $(wildcard include/config/arch/dma/addr/t/64bit.h) \
+    $(wildcard include/config/phys/addr/t/64bit.h) \
+    $(wildcard include/config/64bit.h) \
+  include/uapi/linux/types.h \
+  arch/arm64/include/generated/uapi/asm/types.h \
+  include/uapi/asm-generic/types.h \
+  include/asm-generic/int-ll64.h \
+  include/uapi/asm-generic/int-ll64.h \
+  arch/arm64/include/uapi/asm/bitsperlong.h \
+  include/asm-generic/bitsperlong.h \
+  include/uapi/asm-generic/bitsperlong.h \
+  include/uapi/linux/posix_types.h \
+  include/linux/stddef.h \
+  include/uapi/linux/stddef.h \
+  include/linux/compiler_types.h \
+  arch/arm64/include/uapi/asm/posix_types.h \
+  include/uapi/asm-generic/posix_types.h \
+  arch/arm64/include/uapi/asm/sigcontext.h \
+  include/linux/bug.h \
+    $(wildcard include/config/generic/bug.h) \
+    $(wildcard include/config/bug/on/data/corruption.h) \
+  arch/arm64/include/asm/bug.h \
+  include/linux/stringify.h \
+  arch/arm64/include/asm/asm-bug.h \
+    $(wildcard include/config/debug/bugverbose.h) \
+  arch/arm64/include/asm/brk-imm.h \
+  include/asm-generic/bug.h \
+    $(wildcard include/config/bug.h) \
+    $(wildcard include/config/generic/bug/relative/pointers.h) \
+    $(wildcard include/config/smp.h) \
+  include/linux/compiler.h \
+    $(wildcard include/config/trace/branch/profiling.h) \
+    $(wildcard include/config/profile/all/branches.h) \
+    $(wildcard include/config/stack/validation.h) \
+    $(wildcard include/config/kasan.h) \
+  arch/arm64/include/asm/barrier.h \
+  include/asm-generic/barrier.h \
+  include/linux/kasan-checks.h \
+  include/linux/kernel.h \
     $(wildcard include/config/preempt/voluntary.h) \
     $(wildcard include/config/debug/atomic/sleep.h) \
     $(wildcard include/config/mmu.h) \
@@ -27,8 +79,6 @@ deps_/home/pierr/projet/modules/led.o := \
     $(wildcard include/config/ftrace/mcount/record.h) \
   /usr/lib/gcc-cross/aarch64-linux-gnu/9/include/stdarg.h \
   include/linux/linkage.h \
-  include/linux/compiler_types.h \
-  include/linux/stringify.h \
   include/linux/export.h \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/modversions.h) \
@@ -36,35 +86,7 @@ deps_/home/pierr/projet/modules/led.o := \
     $(wildcard include/config/have/arch/prel32/relocations.h) \
     $(wildcard include/config/trim/unused/ksyms.h) \
     $(wildcard include/config/unused/symbols.h) \
-  include/linux/compiler.h \
-    $(wildcard include/config/trace/branch/profiling.h) \
-    $(wildcard include/config/profile/all/branches.h) \
-    $(wildcard include/config/stack/validation.h) \
-    $(wildcard include/config/kasan.h) \
-  include/uapi/linux/types.h \
-  arch/arm64/include/generated/uapi/asm/types.h \
-  include/uapi/asm-generic/types.h \
-  include/asm-generic/int-ll64.h \
-  include/uapi/asm-generic/int-ll64.h \
-  arch/arm64/include/uapi/asm/bitsperlong.h \
-  include/asm-generic/bitsperlong.h \
-    $(wildcard include/config/64bit.h) \
-  include/uapi/asm-generic/bitsperlong.h \
-  include/uapi/linux/posix_types.h \
-  include/linux/stddef.h \
-  include/uapi/linux/stddef.h \
-  arch/arm64/include/uapi/asm/posix_types.h \
-  include/uapi/asm-generic/posix_types.h \
-  arch/arm64/include/asm/barrier.h \
-  include/asm-generic/barrier.h \
-    $(wildcard include/config/smp.h) \
-  include/linux/kasan-checks.h \
   arch/arm64/include/asm/linkage.h \
-  include/linux/types.h \
-    $(wildcard include/config/have/uid16.h) \
-    $(wildcard include/config/uid16.h) \
-    $(wildcard include/config/arch/dma/addr/t/64bit.h) \
-    $(wildcard include/config/phys/addr/t/64bit.h) \
   include/linux/bitops.h \
   include/linux/bits.h \
   arch/arm64/include/asm/bitops.h \
@@ -137,17 +159,70 @@ deps_/home/pierr/projet/modules/led.o := \
     $(wildcard include/config/arm64/16k/pages.h) \
     $(wildcard include/config/arm64/64k/pages.h) \
   arch/arm64/include/asm/compiler.h \
+  include/asm-generic/ptrace.h \
+  arch/arm64/include/generated/asm/user.h \
+  include/asm-generic/user.h \
+  arch/arm64/include/asm/processor.h \
+    $(wildcard include/config/have/hw/breakpoint.h) \
+    $(wildcard include/config/gcc/plugin/stackleak.h) \
+  include/linux/string.h \
+    $(wildcard include/config/binary/printf.h) \
+    $(wildcard include/config/fortify/source.h) \
+  include/uapi/linux/string.h \
+  arch/arm64/include/asm/string.h \
+    $(wildcard include/config/arch/has/uaccess/flushcache.h) \
+  arch/arm64/include/asm/cpufeature.h \
+    $(wildcard include/config/arm64/sw/ttbr0/pan.h) \
+    $(wildcard include/config/arm64/sve.h) \
+    $(wildcard include/config/arm64/ssbd.h) \
+  include/linux/jump_label.h \
+    $(wildcard include/config/jump/label.h) \
+  arch/arm64/include/asm/jump_label.h \
+  arch/arm64/include/asm/hw_breakpoint.h \
+  arch/arm64/include/asm/virt.h \
+  arch/arm64/include/asm/sections.h \
+  include/asm-generic/sections.h \
+  arch/arm64/include/asm/pgtable-hwdef.h \
+    $(wildcard include/config/pgtable/levels.h) \
+    $(wildcard include/config/arm64/pa/bits.h) \
+  arch/arm64/include/asm/memory.h \
+    $(wildcard include/config/arm64/va/bits.h) \
+    $(wildcard include/config/kasan/extra.h) \
+    $(wildcard include/config/vmap/stack.h) \
+    $(wildcard include/config/debug/align/rodata.h) \
+    $(wildcard include/config/blk/dev/initrd.h) \
+    $(wildcard include/config/debug/virtual.h) \
+    $(wildcard include/config/sparsemem/vmemmap.h) \
+  include/linux/const.h \
+  include/uapi/linux/const.h \
+  arch/arm64/include/asm/page-def.h \
+    $(wildcard include/config/arm64/page/shift.h) \
+    $(wildcard include/config/arm64/cont/shift.h) \
+  arch/arm64/include/generated/asm/sizes.h \
+  include/asm-generic/sizes.h \
+  include/linux/sizes.h \
+  include/linux/mmdebug.h \
+    $(wildcard include/config/debug/vm.h) \
+    $(wildcard include/config/debug/vm/pgflags.h) \
+  include/asm-generic/memory_model.h \
+    $(wildcard include/config/flatmem.h) \
+    $(wildcard include/config/discontigmem.h) \
+    $(wildcard include/config/sparsemem.h) \
+  include/linux/pfn.h \
+  arch/arm64/include/asm/fpsimd.h \
+  arch/arm64/include/generated/uapi/asm/errno.h \
+  include/uapi/asm-generic/errno.h \
+  include/uapi/asm-generic/errno-base.h \
+  include/uapi/linux/elf.h \
+  include/uapi/linux/elf-em.h \
   include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/modules/tree/lookup.h) \
     $(wildcard include/config/livepatch.h) \
     $(wildcard include/config/module/sig.h) \
-    $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/kallsyms.h) \
     $(wildcard include/config/tracepoints.h) \
-    $(wildcard include/config/jump/label.h) \
     $(wildcard include/config/event/tracing.h) \
-    $(wildcard include/config/module/unload.h) \
     $(wildcard include/config/constructors.h) \
     $(wildcard include/config/function/error/injection.h) \
   include/linux/list.h \
@@ -155,11 +230,8 @@ deps_/home/pierr/projet/modules/led.o := \
   include/linux/poison.h \
     $(wildcard include/config/illegal/pointer/value.h) \
     $(wildcard include/config/page/poisoning/zero.h) \
-  include/linux/const.h \
-  include/uapi/linux/const.h \
   include/linux/stat.h \
   arch/arm64/include/asm/stat.h \
-    $(wildcard include/config/compat.h) \
   arch/arm64/include/uapi/asm/stat.h \
   include/uapi/asm-generic/stat.h \
   include/linux/compat_time.h \
@@ -223,7 +295,6 @@ deps_/home/pierr/projet/modules/led.o := \
     $(wildcard include/config/bcache.h) \
     $(wildcard include/config/highmem.h) \
     $(wildcard include/config/x86/32.h) \
-    $(wildcard include/config/vmap/stack.h) \
     $(wildcard include/config/security.h) \
     $(wildcard include/config/arch/task/struct/on/stack.h) \
     $(wildcard include/config/preempt/lazy.h) \
@@ -249,21 +320,6 @@ deps_/home/pierr/projet/modules/led.o := \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   arch/arm64/include/asm/irqflags.h \
-  arch/arm64/include/asm/ptrace.h \
-  arch/arm64/include/uapi/asm/ptrace.h \
-  arch/arm64/include/asm/hwcap.h \
-  arch/arm64/include/uapi/asm/hwcap.h \
-  arch/arm64/include/uapi/asm/sigcontext.h \
-  include/linux/bug.h \
-    $(wildcard include/config/bug/on/data/corruption.h) \
-  arch/arm64/include/asm/bug.h \
-  arch/arm64/include/asm/asm-bug.h \
-    $(wildcard include/config/debug/bugverbose.h) \
-  arch/arm64/include/asm/brk-imm.h \
-  include/asm-generic/bug.h \
-    $(wildcard include/config/bug.h) \
-    $(wildcard include/config/generic/bug/relative/pointers.h) \
-  include/asm-generic/ptrace.h \
   include/linux/preempt.h \
     $(wildcard include/config/preempt/count.h) \
     $(wildcard include/config/trace/preempt/toggle.h) \
@@ -274,57 +330,10 @@ deps_/home/pierr/projet/modules/led.o := \
     $(wildcard include/config/hardened/usercopy.h) \
   include/linux/restart_block.h \
   arch/arm64/include/asm/thread_info.h \
-    $(wildcard include/config/arm64/sw/ttbr0/pan.h) \
-  arch/arm64/include/asm/memory.h \
-    $(wildcard include/config/arm64/va/bits.h) \
-    $(wildcard include/config/kasan/extra.h) \
-    $(wildcard include/config/debug/align/rodata.h) \
-    $(wildcard include/config/blk/dev/initrd.h) \
-    $(wildcard include/config/debug/virtual.h) \
-    $(wildcard include/config/sparsemem/vmemmap.h) \
-  arch/arm64/include/asm/page-def.h \
-    $(wildcard include/config/arm64/page/shift.h) \
-    $(wildcard include/config/arm64/cont/shift.h) \
-  arch/arm64/include/generated/asm/sizes.h \
-  include/asm-generic/sizes.h \
-  include/linux/sizes.h \
-  include/linux/mmdebug.h \
-    $(wildcard include/config/debug/vm.h) \
-    $(wildcard include/config/debug/vm/pgflags.h) \
-  include/asm-generic/memory_model.h \
-    $(wildcard include/config/flatmem.h) \
-    $(wildcard include/config/discontigmem.h) \
-    $(wildcard include/config/sparsemem.h) \
-  include/linux/pfn.h \
   arch/arm64/include/asm/stack_pointer.h \
   include/linux/bottom_half.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lock/stat.h) \
-  arch/arm64/include/asm/processor.h \
-    $(wildcard include/config/have/hw/breakpoint.h) \
-    $(wildcard include/config/gcc/plugin/stackleak.h) \
-  include/linux/string.h \
-    $(wildcard include/config/binary/printf.h) \
-    $(wildcard include/config/fortify/source.h) \
-  include/uapi/linux/string.h \
-  arch/arm64/include/asm/string.h \
-    $(wildcard include/config/arch/has/uaccess/flushcache.h) \
-  arch/arm64/include/asm/cpufeature.h \
-    $(wildcard include/config/arm64/sve.h) \
-    $(wildcard include/config/arm64/ssbd.h) \
-  include/linux/jump_label.h \
-  arch/arm64/include/asm/jump_label.h \
-  arch/arm64/include/asm/hw_breakpoint.h \
-  arch/arm64/include/asm/virt.h \
-  arch/arm64/include/asm/sections.h \
-  include/asm-generic/sections.h \
-  arch/arm64/include/asm/pgtable-hwdef.h \
-    $(wildcard include/config/pgtable/levels.h) \
-    $(wildcard include/config/arm64/pa/bits.h) \
-  arch/arm64/include/asm/fpsimd.h \
-  arch/arm64/include/generated/uapi/asm/errno.h \
-  include/uapi/asm-generic/errno.h \
-  include/uapi/asm-generic/errno-base.h \
   include/linux/cpumask.h \
     $(wildcard include/config/cpumask/offstack.h) \
     $(wildcard include/config/debug/per/cpu/maps.h) \
@@ -575,12 +584,6 @@ deps_/home/pierr/projet/modules/led.o := \
   include/linux/sysctl.h \
     $(wildcard include/config/sysctl.h) \
   include/uapi/linux/sysctl.h \
-  include/linux/elf.h \
-  arch/arm64/include/asm/elf.h \
-  arch/arm64/include/generated/asm/user.h \
-  include/asm-generic/user.h \
-  include/uapi/linux/elf.h \
-  include/uapi/linux/elf-em.h \
   include/linux/kobject.h \
     $(wildcard include/config/uevent/helper.h) \
     $(wildcard include/config/debug/kobject/release.h) \
@@ -609,7 +612,9 @@ deps_/home/pierr/projet/modules/led.o := \
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
+  include/linux/vermagic.h \
+  include/generated/utsrelease.h \
 
-/home/pierr/projet/modules/led.o: $(deps_/home/pierr/projet/modules/led.o)
+/home/pierr/projet/nRF24-Pi/new_char/new_char.mod.o: $(deps_/home/pierr/projet/nRF24-Pi/new_char/new_char.mod.o)
 
-$(deps_/home/pierr/projet/modules/led.o):
+$(deps_/home/pierr/projet/nRF24-Pi/new_char/new_char.mod.o):

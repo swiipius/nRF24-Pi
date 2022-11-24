@@ -1,1 +1,0 @@
-cmd_/home/pierr/projet/modules/led.ko := aarch64-linux-gnu-ld -r  -EL  -maarch64elf -T ./scripts/module-common.lds -T ./arch/arm64/kernel/module.lds  --build-id  -o /home/pierr/projet/modules/led.ko /home/pierr/projet/modules/led.o /home/pierr/projet/modules/led.mod.o ;  true
